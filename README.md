@@ -1,2 +1,2 @@
 # Deep-Learning
-Customised (MLP_CNN_classifier_model_CIFAR10
+CIFAR10_Image_classification_model with CNN
