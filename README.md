@@ -22,6 +22,7 @@ Build and train a CNN model on the CIFAR-10 training set and evaluate its accura
 ---
 
 🔄 Data Loading Pipeline
+
 - Used PyTorch’s Dataset and DataLoader abstractions:
   - Converts images to tensors
   - Enables batching and shuffling
@@ -31,12 +32,14 @@ Build and train a CNN model on the CIFAR-10 training set and evaluate its accura
 ---
 
 🧱 Model Architecture
+
 ➤ Backbone: 5 Custom Blocks (Nth_Block)
-Each block includes:
+- Each block includes:
   - A linear layer producing a weight vector a
   - 3 convolutional layers followed by ReLU activations
   - Weighted sum of conv outputs using parts of a: a1 * conv1 + a2 * conv2 + a3 * conv3
   - BatchNorm and MaxPooling applied after each block
+    
 ➤ Classifier (MLP)
   - Fully Connected Layers with:
     - ReLU activations
@@ -46,6 +49,7 @@ Each block includes:
 ---
 
 ⚙️ Training Configuration
+
 - Loss Function: nn.CrossEntropyLoss (combines Softmax + NLL)
 - Optimizer: torch.optim.Adam
    - Learning Rate: 0.001
