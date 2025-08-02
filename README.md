@@ -58,17 +58,21 @@
 ---
 
 🚀 Training Procedure
-Implemented via trainf() function:
-Trains over multiple epochs on GPU (cuda) or CPU
-Tracks:
-Training Loss
-Training Accuracy
-Validation Accuracy
-Visualization using a custom Animator:
-Loss curve
-Accuracy curves (train & validation)
-Displayed live during training
-Execution time tracked using a Timer utility
+  
+  Implemented via trainf() function:
+   - Trains over multiple epochs on GPU (cuda) or CPU
+   - Tracks:
+       - Training Loss
+       - Training Accuracy
+       - Validation Accuracy
+  - Visualization using a custom Animator:
+       - Loss curve
+       - Accuracy curves (train & validation)
+       - Displayed live during training
+  - Execution time tracked using a Timer utility
+
+---
+
 📊 Results
 Metric	Score
 Training Accuracy	~88.9%
