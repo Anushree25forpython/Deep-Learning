@@ -34,14 +34,13 @@
 🧱 Model Architecture
 
 ➤ Backbone: 5 Custom Blocks (Nth_Block)
-Each block includes:
+- Each block includes:
   - A linear layer producing a weight vector a
   - 3 convolutional layers followed by ReLU activations
   - Weighted sum of conv outputs using parts of a: a1 * conv1 + a2 * conv2 + a3 * conv3
-  - BatchNorm and MaxPooling applied after each block
-    
+  - BatchNorm and MaxPooling applied after each block 
 ➤ Classifier (MLP)
-Fully Connected Layers with:
+- Fully Connected Layers with:
     - ReLU activations
     - Dropout regularization
   - Ends with a Linear layer producing logits for 10 classes
