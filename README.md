@@ -74,23 +74,33 @@
 ---
 
 📊 Results
+
 Metric	Score
-Training Accuracy	~88.9%
-Validation Accuracy	~83.5%
-Final Training Loss	~0.319
-Training & validation accuracy improved steadily without overfitting
-Model generalizes well to unseen test data
+ - Training Accuracy	~88.9%
+ - Validation Accuracy	~83.5%
+ - Final Training Loss	~0.319
+
+   - Training & validation accuracy improved steadily without overfitting
+   - Model generalizes well to unseen test data
+
+---
+
 🧠 Key Learnings & Optimization Strategies
-Backbone-style CNNs with learnable combination of conv layers enhance representation
-Adaptive average pooling helped unify feature dimensions for MLP
-Normalization & dropout played key roles in improving generalization
-Further improvements possible via:
-Advanced architectures (ResNet, EfficientNet)
-Data augmentation
-Learning rate scheduling
+
+- Backbone-style CNNs with learnable combination of conv layers enhance representation
+- Adaptive average pooling helped unify feature dimensions for MLP
+- Normalization & dropout played key roles in improving generalization
+- Further improvements possible via:
+          - Advanced architectures (ResNet, EfficientNet)
+          - Data augmentation
+          - Learning rate scheduling
+
+---
+
 🛠️ Tools & Libraries
-PyTorch
-torchvision
-NumPy
-Matplotlib
-Google Colab (or Jupyter Notebook)
+
+`PyTorch`
+`torchvision`
+`NumPy`
+`Matplotlib`
+`Google Colab` (or Jupyter Notebook)
