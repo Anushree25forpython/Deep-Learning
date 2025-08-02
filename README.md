@@ -1,12 +1,12 @@
 🧠 Project: CIFAR-10 Image Classification using CNN (PyTorch)
 
 📌 Overview
-This project implements a Convolutional Neural Network (CNN) in PyTorch to classify images from the CIFAR-10 dataset. The model aims to accurately predict the category of images into one of 10 classes, using a deep learning pipeline with training, evaluation, and optimization components.
+- This project implements a Convolutional Neural Network (CNN) in PyTorch to classify images from the CIFAR-10 dataset. The model aims to accurately predict the category of images into one of 10 classes, using a deep learning pipeline with training, evaluation, and optimization components.
 
 ---
 
 🎯 Objective
-Build and train a CNN model on the CIFAR-10 training set and evaluate its accuracy on the test set. The goal is to maximize model performance, especially accuracy, while understanding the training dynamics.
+- Build and train a CNN model on the CIFAR-10 training set and evaluate its accuracy on the test set. The goal is to maximize model performance, especially accuracy, while understanding the training dynamics.
 
 ---
 
@@ -34,14 +34,14 @@ Build and train a CNN model on the CIFAR-10 training set and evaluate its accura
 🧱 Model Architecture
 
 ➤ Backbone: 5 Custom Blocks (Nth_Block)
-- Each block includes:
+Each block includes:
   - A linear layer producing a weight vector a
   - 3 convolutional layers followed by ReLU activations
   - Weighted sum of conv outputs using parts of a: a1 * conv1 + a2 * conv2 + a3 * conv3
   - BatchNorm and MaxPooling applied after each block
     
 ➤ Classifier (MLP)
-  - Fully Connected Layers with:
+Fully Connected Layers with:
     - ReLU activations
     - Dropout regularization
   - Ends with a Linear layer producing logits for 10 classes
